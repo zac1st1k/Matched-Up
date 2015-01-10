@@ -23,6 +23,7 @@
 		118303FE1A6153EC006E4C05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118303DA1A6153EC006E4C05 /* UIKit.framework */; };
 		118304061A6153EC006E4C05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 118304041A6153EC006E4C05 /* InfoPlist.strings */; };
 		118304081A6153EC006E4C05 /* Matched_UpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 118304071A6153EC006E4C05 /* Matched_UpTests.m */; };
+		118304131A6154D4006E4C05 /* XZZLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 118304121A6154D4006E4C05 /* XZZLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		118304031A6153EC006E4C05 /* Matched UpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Matched UpTests-Info.plist"; sourceTree = "<group>"; };
 		118304051A6153EC006E4C05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		118304071A6153EC006E4C05 /* Matched_UpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Matched_UpTests.m; sourceTree = "<group>"; };
+		118304111A6154D4006E4C05 /* XZZLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZZLoginViewController.h; sourceTree = "<group>"; };
+		118304121A6154D4006E4C05 /* XZZLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZZLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,7 @@
 				118303E61A6153EC006E4C05 /* XZZAppDelegate.m */,
 				118303E81A6153EC006E4C05 /* Main_iPhone.storyboard */,
 				118303EB1A6153EC006E4C05 /* Main_iPad.storyboard */,
+				118304141A6154F3006E4C05 /* Login */,
 				118303EE1A6153EC006E4C05 /* XZZFirstViewController.h */,
 				118303EF1A6153EC006E4C05 /* XZZFirstViewController.m */,
 				118303F11A6153EC006E4C05 /* XZZSecondViewController.h */,
@@ -158,6 +162,15 @@
 				118304041A6153EC006E4C05 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		118304141A6154F3006E4C05 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				118304111A6154D4006E4C05 /* XZZLoginViewController.h */,
+				118304121A6154D4006E4C05 /* XZZLoginViewController.m */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +221,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = 1st1k;
 				TargetAttributes = {
+					118303D21A6153EC006E4C05 = {
+						DevelopmentTeam = 5VVFP63LAX;
+					};
 					118303F91A6153EC006E4C05 = {
 						TestTargetID = 118303D21A6153EC006E4C05;
 					};
@@ -263,6 +279,7 @@
 				118303E71A6153EC006E4C05 /* XZZAppDelegate.m in Sources */,
 				118303F01A6153EC006E4C05 /* XZZFirstViewController.m in Sources */,
 				118303F31A6153EC006E4C05 /* XZZSecondViewController.m in Sources */,
+				118304131A6154D4006E4C05 /* XZZLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,10 +414,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matched Up/Matched Up-Prefix.pch";
 				INFOPLIST_FILE = "Matched Up/Matched Up-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -410,10 +430,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Matched Up/Matched Up-Prefix.pch";
 				INFOPLIST_FILE = "Matched Up/Matched Up-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
